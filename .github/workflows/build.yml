@@ -38,7 +38,7 @@ jobs:
 
       - name: Build EXE (onedir)
         run: |
-          pyinstaller --clean --noconsole --onedir --name videolocker --add-data "video1.mp4;." --add-data "video2.mp4;." --add-data "video3.mp4;." --add-data "scream.mp3;." videolocker.py
+          pyinstaller --clean --noconsole --onedir --name videolocker --add-data "video1.mp4;." --add-data "video2.mp4;." --add-data "video3.mp4;." videolocker.py
 
       - name: Upload artifact (folder)
         uses: actions/upload-artifact@v4
